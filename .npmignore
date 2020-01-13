@@ -1,0 +1,20 @@
+node_modules
+src
+yarn-error.log
+.editorconfig
+.eslintrc.json
+.prettierrc
+.browserslistrc
+publish.sh
+
+build
+public
+
+*.config.js
+tsconfig.json
+
+# jest
+jest.config.js
+test
+coverage
+
