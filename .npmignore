@@ -1,8 +1,10 @@
 node_modules
 src
 yarn-error.log
+.gitignore
 .editorconfig
 .eslintrc.json
+.eslintignore
 .prettierrc
 .browserslistrc
 publish.sh

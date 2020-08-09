@@ -4,8 +4,24 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "extends": ["plugin:@typescript-eslint/recommended"], // 只用官方推荐配置
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
   "rules": {
-    // "@typescript-eslint/no-inferrable-types": "off"
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+    "@typescript-eslint/ban-types": ["off"]
   }
 }
